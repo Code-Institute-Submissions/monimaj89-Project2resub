@@ -168,3 +168,39 @@ div#map {
     width: 100%; 
  
 }
+
+/* ------------------------------------- Table */
+
+#listing {
+    height: 400px;
+    overflow: auto;
+    cursor: pointer;
+    overflow-x: hidden;
+  }
+
+.table {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+  #resultsTable {
+    width: 100%;
+  }
+
+
+@media(min-width: 280px) and (max-width: 359px) {
+    .custom-shape-divider-bottom-1677668137 svg {height: 40px;}
+    .search-box.active {width: 190px;}
+    .search-box input {font-size: 14px;}
+}
+
+@media(min-width: 360px) and (max-width: 450px) {
+    .search-box.active {width: 250px;}
+}
+
+@media(min-width: 1024px) {
+    .hero-image {height: 900px;}
+    .custom-shape-divider-bottom-1677668137 svg {height: 120px;}
+    .search-box.active {width: 550px;}
+    div#map {width: 50%; float: left;}
+}
