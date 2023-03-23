@@ -25,23 +25,44 @@
         </div>
 
     </header>
-    <!-- Search box -->
-    <div class="intro">
-        <p class="text">Simply click on the &nbsp;<i class="fas fa-search"></i>&nbsp; and type the name of where you
-            would like
-            to visit</p>
-        <div class="search-box">
-            <input id="searchBox" type="text"  placeholder="Search your location">
-            <div class="search-icon">
-                <i class="fas fa-search"></i>
+    <section>
+        <!-- Search box -->
+        <div class="intro">
+            <p class="text">Simply click on the &nbsp;<i class="fas fa-search"></i>&nbsp; and type the name of where you
+                would like
+                to visit</p>
+            <div class="search-box">
+                <input id="searchBox" type="text" placeholder="Search your location">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="cancel-icon">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="search-data"></div>
             </div>
-            <div class="cancel-icon">
-                <i class="fas fa-times"></i>
-            </div>
-            <div class="search-data"></div>
         </div>
-    </div>
-    <div>
+        <div>
+        <!--  Map and table with search results -->
+        <div class="container">
+            <div id="map"></div>
+            <div class="searchResult">
+                <div id="listing">
+                    <table id="resultsTable">
+                        <thead class="table">
+                            <tr>
+                                <td>ID</td>
+                                <td>Name</td>
+                                <td>Rating</td>
+                            </tr>
+                        </thead>
+                        <tbody id="results"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <!-- Font Awesome icon -->
@@ -50,7 +71,13 @@
     <script src="assets/js/searchbar.js"></script>
     <script src="assets/js/map.js"></script>
     <!-- Google Map -->
-    
+    <script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfOaur7IEZuFFfgr3-uR29oa8ehDwfdFs&callback=initMap&libraries=places&v=weekly"
+        defer></script>
+
 </body>
 
 </html>
