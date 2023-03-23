@@ -183,9 +183,26 @@ div#map {
     font-size: 1.1em;
 }
 
-  #resultsTable {
+#resultsTable {
     width: 100%;
-  }
+}
+
+
+/* ------------------------------------- Footer */
+
+.set-bkgnd {
+    background-color: #ced8d9;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border: 2px groove #c0c0c0;
+}
+
+#footer {
+    height: 3em;
+    font-size: smaller;
+    text-align: center;
+    padding-right: 15px;
+}
 
 
 @media(min-width: 280px) and (max-width: 359px) {
