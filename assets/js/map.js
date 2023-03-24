@@ -110,7 +110,7 @@ function addResult(result, i) {
 
   const iconTd = document.createElement("td");
   const nameTd = document.createElement("td");
-  // const ratingTd = document.createElement("td");
+  const ratingTd = document.createElement("td");
   const icon = document.createElement("img");
 
   icon.src = markerIcon;
@@ -119,10 +119,29 @@ function addResult(result, i) {
 
   const name = document.createTextNode(result.name);
 
+  //  Show rating stars on the searched places
+
+  let ratingHtml = '';
+  let ratingNew = '';
+  let ratingNum = parseFloat(result.rating);
+  const blackstar = '\u2605';
+  const whitestar = '\u2606';
+  if (ratingNum) {
+    for (let i = 0; i < 5; i++) {
+      ratingNum < (i + 0.5) ? ratingHtml += whitestar : ratingHtml += blackstar;
+      ratingNew = document.createTextNode(ratingHtml);
+    }
+  } else {
+    ratingHtml += whitestar + whitestar + whitestar + whitestar + whitestar;
+    ratingNew = document.createTextNode(ratingHtml);
+  }
+
   iconTd.appendChild(icon);
   nameTd.appendChild(name);
+  ratingTd.appendChild(ratingNew);
   tr.appendChild(iconTd);
   tr.appendChild(nameTd);
+  tr.appendChild(ratingTd);
   results.appendChild(tr);
 }
 
