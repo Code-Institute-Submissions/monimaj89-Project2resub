@@ -49,23 +49,10 @@ const MARKER_PATH =
   // Search for hotels, restaurant and attractions in the selected city, within the viewport of the map.
 
 function search() {
-    let placeTypeNew;
-    placeTypeNew = "";
-    let search;
-  
-    const multiType = placeType.includes(",");
-    if (multiType) {
-      placeTypeNew = placeType.split(',');
-      search = {
-        bounds: map.getBounds(),
-        types: placeTypeNew,
-      };
-    } else {
-      search = {
-        bounds: map.getBounds(),
-        types: [placeType]
-      };
-    }
+  const search = {
+    bounds: map.getBounds(),
+    types: ["lodging"],
+  };
 
   places.nearbySearch(search, (results, status,) => {
     if (status === google.maps.places.PlacesServiceStatus.OK && results) {
@@ -97,4 +84,82 @@ function search() {
       }
     }
   });
+}
+
+
+
+function dropMarker(i) {
+  return function () {
+    markers[i].setMap(map);
+  };
+}
+
+
+//  Show search result in the table
+
+function addResult(result, i) {
+  const results = document.getElementById("results");
+  const markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
+  const markerIcon = MARKER_PATH + markerLetter + ".png";
+  const tr = document.createElement("tr");
+
+  tr.style.backgroundColor = i % 2 === 0 ? "#F0F0F0" : "#FFFFFF";
+  tr.onclick = function () {
+    google.maps.event.trigger(markers[i], "click");
+  };
+
+  const iconTd = document.createElement("td");
+  const nameTd = document.createElement("td");
+  // const ratingTd = document.createElement("td");
+  const icon = document.createElement("img");
+
+  icon.src = markerIcon;
+  icon.setAttribute("class", "placeIcon");
+  icon.setAttribute("className", "placeIcon");
+
+  const name = document.createTextNode(result.name);
+
+  iconTd.appendChild(icon);
+  nameTd.appendChild(name);
+  tr.appendChild(iconTd);
+  tr.appendChild(nameTd);
+  results.appendChild(tr);
+}
+
+// Get the place details showed in an info window anchored on the marker.
+
+function showInfoWindow() {
+  // @ts-ignore
+  const marker = this;
+
+  places.getDetails({
+      placeId: marker.placeResult.place_id
+    },
+    (place, status) => {
+      if (status !== google.maps.places.PlacesServiceStatus.OK) {
+        return;
+      }
+
+      infoWindow.open(map, marker);
+      buildIWContent(place);
+    }
+  );
+}
+
+function clearMarkers() {
+  for (let i = 0; i < markers.length; i++) {
+    if (markers[i]) {
+      markers[i].setMap(null);
+    }
+  }
+
+  markers = [];
+}
+
+function clearResults() {
+  const results = document.getElementById("results");
+
+  while (results.childNodes[0]) {
+    results.removeChild(results.childNodes[0]);
+  }
 }
