@@ -49,12 +49,25 @@ const MARKER_PATH =
   // Search for hotels, restaurant and attractions in the selected city, within the viewport of the map.
 
 function search() {
-  const search = {
-    bounds: map.getBounds(),
-    types: ["lodging"],
-  };
+    let placeTypeNew;
+    placeTypeNew = "";
+    let search;
+  
+    const multiType = placeType.includes(",");
+    if (multiType) {
+      placeTypeNew = placeType.split(',');
+      search = {
+        bounds: map.getBounds(),
+        types: placeTypeNew,
+      };
+    } else {
+      search = {
+        bounds: map.getBounds(),
+        types: [placeType]
+      };
+    }
 
-  places.nearbySearch(search, (results, status, pagination) => {
+  places.nearbySearch(search, (results, status,) => {
     if (status === google.maps.places.PlacesServiceStatus.OK && results) {
       clearResults();
       clearMarkers();
@@ -76,7 +89,7 @@ function search() {
         // If the user clicks a hotel marker, show the details of that hotel
         // in an info window.
         // @ts-ignore TODO refactor to avoid storing on marker
-        
+
         markers[i].placeResult = results[i];
         google.maps.event.addListener(markers[i], "click", showInfoWindow);
         setTimeout(dropMarker(i), i * 100);
