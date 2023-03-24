@@ -48,45 +48,64 @@ const MARKER_PATH =
 
   // Search for hotels, restaurant and attractions in the selected city, within the viewport of the map.
 
-function search() {
-  const search = {
-    bounds: map.getBounds(),
-    types: ["lodging"],
-  };
-
-  places.nearbySearch(search, (results, status,) => {
-    if (status === google.maps.places.PlacesServiceStatus.OK && results) {
-      clearResults();
-      clearMarkers();
-
-      // Create a marker for each place found, and
-      // assign a letter of the alphabetic to each marker icon.
-
-      for (let i = 0; i < results.length; i++) {
-        const markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
-        const markerIcon = MARKER_PATH + markerLetter + ".png";
-
-        // Use marker animation to drop the icons incrementally on the map.
-
-        markers[i] = new google.maps.Marker({
-          position: results[i].geometry.location,
-          animation: google.maps.Animation.DROP,
-          icon: markerIcon,
-        });
-        // If the user clicks a hotel marker, show the details of that hotel
-        // in an info window.
-        // @ts-ignore TODO refactor to avoid storing on marker
-
-        markers[i].placeResult = results[i];
-        google.maps.event.addListener(markers[i], "click", showInfoWindow);
-        setTimeout(dropMarker(i), i * 100);
-        addResult(results[i], i);
-      }
+  function search() {
+    let placeTypeNew;
+    placeTypeNew = "";
+    let search;
+  
+    const multiType = placeType?.includes(",");
+    if (multiType) {
+      placeTypeNew = placeType.split(',');
+      search = {
+        bounds: map.getBounds(),
+        types: placeTypeNew,
+      };
+    } else {
+      search = {
+        bounds: map.getBounds(),
+        types: [placeType]
+      };
     }
-  });
+  
+  
+    places.nearbySearch(search, (results, status) => {
+      if (status === google.maps.places.PlacesServiceStatus.OK && results) {
+        clearResults();
+        clearMarkers();
+  
+        // Create a marker for each place found, and
+        // assign a letter of the alphabetic to each marker icon.
+  
+        for (let i = 0; i < results.length; i++) {
+          const markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
+          const markerIcon = MARKER_PATH + markerLetter + ".png";
+  
+          // Use marker animation to drop the icons incrementally on the map.
+  
+          markers[i] = new google.maps.Marker({
+            position: results[i].geometry.location,
+            animation: google.maps.Animation.DROP,
+            icon: markerIcon,
+          });
+  
+          // If the user clicks a place marker, show the details of that place
+          // in an info window.
+          // @ts-ignore TODO refactor to avoid storing on marker
+  
+          markers[i].placeResult = results[i];
+          google.maps.event.addListener(markers[i], "click", showInfoWindow);
+          setTimeout(dropMarker(i), i * 200);
+          addResult(results[i], i);
+        }
+      }
+    });
+  }
+
+function setSearchFor(placeSearchType) {
+  placeType = '';
+  placeType = placeSearchType;
+  search();
 }
-
-
 
 function dropMarker(i) {
   return function () {
