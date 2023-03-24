@@ -211,6 +211,10 @@ div#map {
     .search-box input {font-size: 14px;}
 }
 
+@media(min-width: 360px) {
+    .check {display: flex; justify-content: center;}
+}
+
 @media(min-width: 360px) and (max-width: 450px) {
     .search-box.active {width: 250px;}
 }

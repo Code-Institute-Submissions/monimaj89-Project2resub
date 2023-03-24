@@ -42,8 +42,31 @@
                 <div class="search-data"></div>
             </div>
         </div>
+        <!-- Radio buttons for selecting type of search -->
         <div>
-            <!--  Map and table with search results -->
+            <fieldset>
+                <legend>Please select what would you like to see:</legend>
+                <div class="check">
+                    <div>
+                        <input type="radio" id="searchFor-hotel" name="searchFor" value="lodging"
+                            onClick="setSearchFor(this.value)" checked>
+                        <label for="hotel">Hotels</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="searchFor-rest" name="searchFor" value="restaurant"
+                            onClick="setSearchFor(this.value)">
+                        <label for="restaurant">Restaurants</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="searchFor-attr" name="searchFor" value="tourist_attraction"
+                            onClick="setSearchFor(this.value)">
+                        <label for="attraction">Attractions</label>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+         <!--  Map and table with search results -->
+        <div>
             <div class="container">
                 <div id="map"></div>
                 <div class="searchResult">
