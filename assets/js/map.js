@@ -6,6 +6,7 @@ let placeType;
 
 const MARKER_PATH =
   "https://developers.google.com/maps/documentation/javascript/images/marker_green";
+  const hostnameRegexp = new RegExp("^https?://.+?/");
 
   function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
@@ -101,16 +102,16 @@ const MARKER_PATH =
     });
   }
 
+function dropMarker(i) {
+    return function () {
+      markers[i].setMap(map);
+    };
+  }
+
 function setSearchFor(placeSearchType) {
   placeType = '';
   placeType = placeSearchType;
   search();
-}
-
-function dropMarker(i) {
-  return function () {
-    markers[i].setMap(map);
-  };
 }
 
 
@@ -183,6 +184,44 @@ function showInfoWindow() {
     }
   );
 }
+
+
+function buildIWContent(place) {
+  document.getElementById("iw-icon").innerHTML =
+    '<img class="hotelIcon" ' + 'src="' + place.icon + '"/>';
+  document.getElementById("iw-url").innerHTML =
+    '<b><a href="' + place.url + '">' + place.name + "</a></b>";
+  document.getElementById("iw-address").textContent = place.vicinity;
+  if (place.formatted_phone_number) {
+    document.getElementById("iw-phone-row").style.display = "";
+    document.getElementById("iw-phone").textContent =
+      place.formatted_phone_number;
+  } else {
+    document.getElementById("iw-phone-row").style.display = "none";
+  }
+
+
+  // The regexp isolates the first part of the URL (domain plus subdomain)
+  // to give a short URL for displaying in the info window.
+
+  if (place.website) {
+    let fullUrl = place.website;
+    let website = String(hostnameRegexp.exec(place.website));
+
+    if (!website) {
+      website = "http://" + place.website + "/";
+      fullUrl = website;
+    }
+
+    document.getElementById("iw-website-row").style.display = "";
+    document.getElementById("iw-website").textContent = website;
+  } else {
+    document.getElementById("iw-website-row").style.display = "none";
+  }
+}
+
+window.initMap = initMap;
+
 
 function clearMarkers() {
   for (let i = 0; i < markers.length; i++) {
