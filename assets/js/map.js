@@ -220,8 +220,6 @@ function buildIWContent(place) {
   }
 }
 
-window.initMap = initMap;
-
 
 function clearMarkers() {
   for (let i = 0; i < markers.length; i++) {
@@ -239,4 +237,20 @@ function clearResults() {
   while (results.childNodes[0]) {
     results.removeChild(results.childNodes[0]);
   }
+}
+
+window.initMap = initMap;
+
+
+// Clear all search results
+
+function wipeOut() {
+ 
+  document.getElementById('searchBox').value = "";
+  let clearAll = document.getElementsByName("searchFor");
+  for(let i = 0; i < clearAll.length; i++) {
+    clearAll[i].checked = false;
+  }
+  clearResults();
+  clearMarkers(); 
 }

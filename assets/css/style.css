@@ -160,6 +160,23 @@ body {
     display: none;
   }
 
+  /* ------------------------------------- Clear button */
+
+.mybtn{
+    background-color: #0ba5f1;
+    border: 1px solid;
+    border-radius: 1rem;
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+.mybtn:hover {
+    background-color: #d8e3e9;
+    color: #2d3436;
+    border: 1px solid;
+}
+
   /* ------------------------------------- Map */
 
 
