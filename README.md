@@ -10,6 +10,8 @@ The website is fully responsive and was designed using HTML, CSS and JavaScript.
 
 [View the live site](https://monimaj89.github.io/Project2s/)
 
+![Website mock-up](assets/images/mockup.webp)
+
 # Contents
 
 # Design
