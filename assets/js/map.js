@@ -254,3 +254,4 @@ function wipeOut() {
   clearResults();
   clearMarkers(); 
 }
+
