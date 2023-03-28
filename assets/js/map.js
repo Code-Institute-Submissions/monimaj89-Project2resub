@@ -40,7 +40,7 @@ const MARKER_PATH =
     if (place.geometry && place.geometry.location) {
       map.panTo(place.geometry.location);
       map.setZoom(15);
-      selectedType = 'lodging';
+      placeType = 'lodging';
       search();
     } else {
       document.getElementById("searchBox");
@@ -54,7 +54,7 @@ const MARKER_PATH =
     placeTypeNew = "";
     let search;
   
-    const multiType = placeType?.includes(",");
+    const multiType = placeType.includes(",");
     if (multiType) {
       placeTypeNew = placeType.split(",");
       search = {
@@ -207,7 +207,7 @@ function buildIWContent(place) {
   // to give a short URL for displaying in the info window.
 
   if (place.website) {
-    // let fullUrl = place.website;
+    let fullUrl = place.website;
     let website = String(hostnameRegexp.exec(place.website));
 
     if (!website) {
@@ -247,8 +247,7 @@ window.initMap = initMap;
 // Clear all search results
 
 function wipeOut() {
- 
-  document.getElementById("searchBox").value = '';
+  document.getElementById("searchBox").value = "";
   let clearAll = document.getElementsByName("searchFor");
   for(let i = 0; i < clearAll.length; i++) {
     clearAll[i].checked = false;
