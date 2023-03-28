@@ -56,7 +56,7 @@ const MARKER_PATH =
   
     const multiType = placeType?.includes(",");
     if (multiType) {
-      placeTypeNew = placeType.split(',');
+      placeTypeNew = placeType.split(",");
       search = {
         bounds: map.getBounds(),
         types: placeTypeNew,
@@ -108,8 +108,10 @@ function dropMarker(i) {
     };
   }
 
+// Radio buttons search function
+
 function setSearchFor(placeSearchType) {
-  placeType = '';
+  placeType = "";
   placeType = placeSearchType;
   search();
 }
@@ -141,11 +143,11 @@ function addResult(result, i) {
 
   //  Show rating stars on the searched places
 
-  let ratingHtml = '';
-  let ratingNew = '';
+  let ratingHtml = "";
+  let ratingNew = "";
   let ratingNum = parseFloat(result.rating);
-  const blackstar = '\u2605';
-  const whitestar = '\u2606';
+  const blackstar = "\u2605";
+  const whitestar = "\u2606";
   if (ratingNum) {
     for (let i = 0; i < 5; i++) {
       ratingNum < (i + 0.5) ? ratingHtml += whitestar : ratingHtml += blackstar;
@@ -205,7 +207,7 @@ function buildIWContent(place) {
   // to give a short URL for displaying in the info window.
 
   if (place.website) {
-    let fullUrl = place.website;
+    // let fullUrl = place.website;
     let website = String(hostnameRegexp.exec(place.website));
 
     if (!website) {
@@ -246,7 +248,7 @@ window.initMap = initMap;
 
 function wipeOut() {
  
-  document.getElementById('searchBox').value = "";
+  document.getElementById("searchBox").value = '';
   let clearAll = document.getElementsByName("searchFor");
   for(let i = 0; i < clearAll.length; i++) {
     clearAll[i].checked = false;
