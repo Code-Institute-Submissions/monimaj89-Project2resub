@@ -191,4 +191,36 @@ It was fixed by changing section element to div element.
   * On desktop on the other hand there is a tiny problem with the best practice which is caused again because of the image. The aspect ratio isn't quite perfect but it was necessary to keep the image to keep the image at a suitable size for a large screen
 
 
+## User Testing
+|   Target      |   Outcome     | Image |
+| ------------- |-------------| -----------|
+| 1. Expand the search bar  | By clicking on the magnifying glass icon, the user opens the search bar | ![Search icon](assets/images/search.webp) |
+| 2. Search locations using search bar |Type any location in the search box and the autocomplete feature will help user choose |![Search Bar](assets/images/auto.webp) |
+| 3. Choose between hotels, restaurant and attractions | Using radio buttons user can choose what to display on the map |![Radio buttons](assets/images/radio.webp) |
+| 4. Display detail infos about every searched place |By clicking on the markers on the map user can check address, telephone number or website of each place searched|![Marker info](assets/images/info.webp) |
+| 5. Display search result in the table| All places search by the user will be displayed in the table with id tag, name and rating stars | ![Table](assets/images/table.webp) |
+| 6. Clear button | The clear button will delete all seraching results, with markers, table and search bar |![Button](assets/images/button.webp)|
 
+# Deployment
+### The following steps were taken to deploy the website on GitHub Pages:
+
+1. The Code Insitute template was obtained from https://github.com/Code-Institute-Org/gitpod-full-template
+2. A new repository was created in GitHub, the project was named.
+3. The green Gitpod button was pressed to open a new workspace/development environment (obtain the gitpod extension to enable the green button).
+4. Git is used to commit during development and push this over to Github
+5. To create the hosted site at Github Pages, I navigated to the Github repo settings tab and found the Github pages dedicated section.
+6. The main branch was chosen in the dropdown menu and the 'save' button was pressed. This supplied a live link to the [website](https://monimaj89.github.io/Project2/).
+
+### To run locally
+1. Go to the Github repo at https://github.com/monimaj89/Project2.
+2. Click on the 'code' button and copy HTTPS link.
+3. Open your own terminal in your editor and change the current working directory to the location of where you want the cloned directory to be.
+4. In the terminal type git clone, and then paste the URL you copied.
+5. Press enter to complete.
+
+### You can fork the repository by following these steps:
+
+1. Go to the GitHub repository
+2. Click on Fork button in upper right hand corner
+
+# Credits
