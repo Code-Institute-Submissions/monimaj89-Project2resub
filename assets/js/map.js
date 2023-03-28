@@ -255,3 +255,13 @@ function wipeOut() {
   clearMarkers(); 
 }
 
+// Hide the paragraph above search bar on mobile devices.
+
+const searchIcon = document.querySelector(".search-icon");
+const text = document.querySelector(".text");
+
+searchIcon.addEventListener("click", function () {
+  if (window.innerWidth <= 767) {
+    text.classList.add("hide-text");
+  }
+});
