@@ -153,29 +153,32 @@ and adjusted to my needs
 # Testing
 ## Validator Testing
 ### HTML
-* All four pages were tested using the [W3C Validator](https://validator.w3.org/).
-* On the gallery page one [warning](assets/images/readme-img/warning.PNG) was found.
+* The page were tested using the [W3C Validator](https://validator.w3.org/)
+* There was one [warning](assets/images/html-warning.webp)
 It was fixed by changing section element to div element.
-  * [Home Page](assets/images/readme-img/homecheck.PNG)
-  * [Gallery Page](assets/images/readme-img/gallerycheck.PNG)
-  * [Contact Page](assets/images/readme-img/contactcheck.PNG)
-  * [Thank you Page](assets/images/readme-img/thankyoucheck.PNG)
+  * [HTML](assets/images/html-check.webp)
+
 ### CSS
   * [CSS Validator](https://jigsaw.w3.org/css-validator/) were used to test the CSS, and shows no errors.
-  * [CSS Check](assets/images/readme-img/csscheck.PNG)
+  * [CSS Check](assets/images/css.webp)
+
+### JavaScript 
+* [JSHint](https://jshint.com/) were used to test the JavaScript, and shows no errors
+* There was one warning (line 153) regarding my conditional operator. The if/else statement worked good, but I wanted to use something more concise, which also works fine
+* Recording to JSHint I also have two unused variables which are both functions
+  * [JS Check](assets/images/jscheck.webp)
 
 ## Wave Testing
 * The page was run through the Web Accessibility Evaluation Tool [Wave](https://wave.webaim.org/), the initial report showed a few needs for improvement:
   * No heading structure, which in this page I believe is not necessary
   * Changed colour of Clear button text from white to black to improve contrast
   * Screen reader only information  were added for search bar icons.
-* There were still two contrast errors presented which I wasn't able to resolve as they don't show where the problem is
 * There were still few alert errors:
   * Very small text on google map
   * Redundant title text which I didn't find solution
   * Layout table which I also wasn't able to solve
 
-* ![Score](assets/images/wave.png)
+* ![Score](assets/images/wave.webp)
 
 
 ## Lighthouse Testing
