@@ -130,9 +130,62 @@ and adjusted to my needs
 ![Footer](assets/images/footer.webp)
 
 
+
 # Technologies used
+  * Languages
+    * The structure of website was developed using HTML as the main language
+    * The Website was styled using custom CSS in an external file
+    * The interactive part of the site was created with JavaScript
+  * Tools
+    * GitHub - source code is hosted and deployed using Git Pages.
+    * Git - used to commit and push code during the development off the Website
+    * Google Chrome Developer Tools was used for debugging and testing with Lighthouse
+    * [Google map](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch) - to download and set the map on the site
+    * [Google Fonts](https://fonts.google.com/) - used to import fonts for use in the site
+    * [Font Awesome](https://fontawesome.com/) - used for icons
+    * [Cloud Convert](https://cloudconvert.com/) - used to convert images into webp
+    * [Tinyjpg](https://tinypng.com/) was used to reduce the size of the image
+    * [Favicon](https://favicon.io/) - used for a browser tab icon
+    * [Balsamiq](https://balsamiq.com/wireframes/desktop/) - used to create wireframes
+    * [Mockup Generator](https://techsini.com/multi-mockup/) - used to create mockup image
+
 
 # Testing
+## Validator Testing
+### HTML
+* All four pages were tested using the [W3C Validator](https://validator.w3.org/).
+* On the gallery page one [warning](assets/images/readme-img/warning.PNG) was found.
+It was fixed by changing section element to div element.
+  * [Home Page](assets/images/readme-img/homecheck.PNG)
+  * [Gallery Page](assets/images/readme-img/gallerycheck.PNG)
+  * [Contact Page](assets/images/readme-img/contactcheck.PNG)
+  * [Thank you Page](assets/images/readme-img/thankyoucheck.PNG)
+### CSS
+  * [CSS Validator](https://jigsaw.w3.org/css-validator/) were used to test the CSS, and shows no errors.
+  * [CSS Check](assets/images/readme-img/csscheck.PNG)
+
+## Wave Testing
+* The page was run through the Web Accessibility Evaluation Tool [Wave](https://wave.webaim.org/), the initial report showed a few needs for improvement:
+  * No heading structure, which in this page I believe is not necessary
+  * Changed colour of Clear button text from white to black to improve contrast
+  * Screen reader only information  were added for search bar icons.
+* There were still two contrast errors presented which I wasn't able to resolve as they don't show where the problem is
+* There were still few alert errors:
+  * Very small text on google map
+  * Redundant title text which I didn't find solution
+  * Layout table which I also wasn't able to solve
+
+* ![Score](assets/images/wave.png)
+
+
+## Lighthouse Testing
+### Lighthouse testing was performed using [Google Chrome Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk) extension.
+* [Mobile](assets/images/mobilelight.webp)
+
+  * The performance on mobile devices is not exactly what I wish for, this is due to the image being too big, the image has been passed through [Tinyjpg](https://tinypng.com/) a few times but still seems to be to big.
+* [Desktop](assets/images/desktoplight.webp)
+
+  * On desktop on the other hand there is a tiny problem with the best practice which is caused again because of the image. The aspect ratio isn't quite perfect but it was necessary to keep the image to keep the image at a suitable size for a large screen
 
 
 
