@@ -78,6 +78,20 @@ Font was imported from [Google Fonts](https://fonts.google.com/).
 
 ![Header Image](assets/images/header.webp)
 
+## Wireframes
+Wireframes were created at the beginning of the design process using [Balsamiq](https://balsamiq.com/wireframes/desktop/). 
+
+* Desktop
+
+![Home page](assets/images/browser.webp)
+
+* Tablet
+
+![Gallery](assets/images/tablet.webp)
+
+* Mobile phone
+
+![Contact](assets/images/mobile.webp)
 
 # Features 
 ## Favicon
