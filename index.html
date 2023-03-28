@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <title>Your travel destination</title>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -29,14 +28,14 @@
             </svg>
         </div>
     </header>
-    <section>
+    <div>
         <!-- Search box -->
         <div class="intro">
             <p class="text">Simply click on the &nbsp;<i class="fas fa-search"></i>&nbsp; and type the name of where you
                 would like
                 to visit</p>
             <div class="search-box">
-                <input id="searchBox" type="text" placeholder="Search your location">
+                <input id="searchBox" type="text" placeholder="Search your location" aria-labelledby="searchBox">
                 <div class="search-icon">
                     <i class="fas fa-search"></i>
                 </div>
@@ -58,64 +57,63 @@
                     <div>
                         <input type="radio" id="searchFor-hotel" name="searchFor" value="lodging"
                             onClick="setSearchFor(this.value)" checked>
-                        <label for="hotel">Hotels</label>
+                        <label for="searchFor-hotel">Hotels</label>
                     </div>
                     <div>
                         <input type="radio" id="searchFor-rest" name="searchFor" value="restaurant"
                             onClick="setSearchFor(this.value)">
-                        <label for="restaurant">Restaurants</label>
+                        <label for="searchFor-rest">Restaurants</label>
                     </div>
                     <div>
                         <input type="radio" id="searchFor-attr" name="searchFor" value="tourist_attraction"
                             onClick="setSearchFor(this.value)">
-                        <label for="attraction">Attractions</label>
+                        <label for="searchFor-attr">Attractions</label>
                     </div>
                 </div>
             </fieldset>
         </div>
-         <!--  Map and table with search results -->
-        <div>
-            <div class="container">
-                <div id="map"></div>
-                <div class="searchResult">
-                    <div id="listing">
-                        <table id="resultsTable">
-                            <thead class="table">
-                                <tr>
-                                    <td>ID</td>
-                                    <td>Name</td>
-                                    <td>Rating</td>
-                                </tr>
-                            </thead>
-                            <tbody id="results"></tbody>
-                        </table>
-                    </div>
+        <!--  Map and table with search results -->
+        <div class="container">
+            <div id="map"></div>
+            <div class="searchResult">
+                <div id="listing">
+                    <table id="resultsTable">
+                        <thead class="table">
+                            <tr>
+                                <td>ID</td>
+                                <td>Name</td>
+                                <td>Rating</td>
+                            </tr>
+                        </thead>
+                        <tbody id="results"></tbody>
+                    </table>
                 </div>
             </div>
-            <!-- Table for infoWindow displays when clicked on marker -->
+        </div>
+        <!-- Table for infoWindow displays when clicked on marker -->
         <div style="display: none">
             <div id="info-content">
-              <table>
-                <tr id="iw-url-row">
-                  <td id="iw-icon"></td>
-                  <td id="iw-url"></td>
-                </tr>
-                <tr id="iw-address-row">
-                  <td>Address:</td>
-                  <td id="iw-address"></td>
-                </tr>
-                <tr id="iw-phone-row">
-                  <td>Telephone:</td>
-                  <td id="iw-phone"></td>
-                </tr>
-                <tr id="iw-website-row">
-                  <td>Website:</td>
-                  <td id="iw-website"></td>
-                </tr>
-              </table>
+                <table>
+                    <tr id="iw-url-row">
+                        <td id="iw-icon"></td>
+                        <td id="iw-url"></td>
+                    </tr>
+                    <tr id="iw-address-row">
+                        <td>Address:</td>
+                        <td id="iw-address"></td>
+                    </tr>
+                    <tr id="iw-phone-row">
+                        <td>Telephone:</td>
+                        <td id="iw-phone"></td>
+                    </tr>
+                    <tr id="iw-website-row">
+                        <td>Website:</td>
+                        <td id="iw-website"></td>
+                    </tr>
+                </table>
             </div>
-          </div>
-    </section>
+        </div>
+    </div>
     <!-- Footer -->
     <footer class="set-bkgnd" id="footer">
         <div>
