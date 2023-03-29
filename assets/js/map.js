@@ -54,7 +54,7 @@ const MARKER_PATH =
     placeTypeNew = "";
     let search;
   
-    const multiType = placeType.includes(",");
+    const multiType = placeType?.includes(",");
     if (multiType) {
       placeTypeNew = placeType.split(",");
       search = {
@@ -116,7 +116,6 @@ function setSearchFor(placeSearchType) {
   search();
 }
 
-
 //  Show search result in the table
 
 function addResult(result, i) {
@@ -150,7 +149,7 @@ function addResult(result, i) {
   const whitestar = "\u2606";
   if (ratingNum) {
     for (let i = 0; i < 5; i++) {
-      ratingNum < (i + 0.5) ? ratingHtml += whitestar : ratingHtml += blackstar;
+      ratingHtml +=  ratingNum < (i + 0.5) ? whitestar : blackstar;
       ratingNew = document.createTextNode(ratingHtml);
     }
   } else {
@@ -246,6 +245,8 @@ window.initMap = initMap;
 
 // Clear all search results
 
+
+
 function wipeOut() {
   document.getElementById("searchBox").value = "";
   let clearAll = document.getElementsByName("searchFor");
@@ -255,6 +256,7 @@ function wipeOut() {
   clearResults();
   clearMarkers(); 
 }
+
 
 // Hide the paragraph above search bar on mobile devices.
 
