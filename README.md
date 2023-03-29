@@ -178,8 +178,8 @@ It was fixed by changing section element to div element.
 
 ### JavaScript 
 * [JSHint](https://jshint.com/) were used to test the JavaScript, and shows no errors
-* There was one warning (line 153) regarding my conditional operator. The if/else statement worked good, but I wanted to use something more concise, which also works fine
-* Recording to JSHint I also have two unused variables which are both functions
+* There are two unused variables which are functions connected with index.html code, I've tried changed it for event listener instead of onClick, but I was not able to make it work
+* Undefined variables 'google' are from code copied from [Google Maps Platform](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch)
   * [JS Check](assets/images/jscheck.webp)
 
 ## Wave Testing
