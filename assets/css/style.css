@@ -221,6 +221,16 @@ div#map {
     padding-right: 15px;
 }
 
+/* -------------------------------------- 404 page */
+.return a {
+    font-size: 2rem;
+    color: #000;
+}
+
+.return a:hover {
+    color: #0ba5f1;
+}
+
 
 @media(min-width: 280px) and (max-width: 359px) {
     .custom-shape-divider-bottom-1677668137 svg {height: 40px;}
