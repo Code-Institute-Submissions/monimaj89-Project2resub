@@ -2,13 +2,13 @@
 
 Choose your holiday destination is a user-friendly website where you can easily search for any place in the world and you can check hotels in a given place as well as restaurants and tourist attractions.
 
-The site uses google places search and via radio buttons you can choose between various options to search for places of interest on the map. The search results will be displayed in a table under the map on mobile devices, or next to the map on larger screens. In addition, markers are displayed on the map next to each searched place, which you can click on and find out details about the searched place, such as: address, telephone number and website.
+The site uses google places search and through radio buttons you can choose between various options to search for places of interest on the map. The search results will be displayed in a table under the map on mobile devices, or next to the map on larger screens. In addition, markers are displayed on the map next to each searched place, which you can click on and find out details about the searched place, such as: address, telephone number and website.
 
 After finding the place of interest, the search results and the name of the found place can be deleted using the Clear button.
 
 The website is fully responsive and was designed using HTML, CSS and JavaScript.
 
-[View the live site](https://monimaj89.github.io/Project2s/)
+[View the live site](https://monimaj89.github.io/Project2/)
 
 ![Website mock-up](assets/images/mockup.webp)
 
@@ -24,7 +24,7 @@ The website is fully responsive and was designed using HTML, CSS and JavaScript.
 ### Site Owner Goals:
 * Allow user to easy search on map
 * Provide essential information in the table
-* Allow user to clear all result before new one
+* Allow user to clear all results before new one
 
 ### User Expectactions
 * An easy and intuitive navigation system
@@ -43,7 +43,7 @@ The website is fully responsive and was designed using HTML, CSS and JavaScript.
  
 ### As a site owner:
 * I want users to search places on the map
-* I want search result be displayed in the table
+* I want search results be displayed in the table
 * I want users to search type of place using radio buttons
 * I want users to have easy access to detailed information about the searched place
 
@@ -95,7 +95,7 @@ Wireframes were created at the beginning of the design process using [Balsamiq](
 
 # Features 
 ## Favicon
-* Paint palette [Favicon](https://favicon.io/) 
+* Palm tree from [Favicon](https://favicon.io/) 
 * Make the tab stands out among others and allow users easily revisit the page
 
   ![Favicon](assets/images/favicon.webp)
@@ -139,7 +139,7 @@ and adjusted to my needs
 ![Table](assets/images/table.webp)
 
 ## Footer
-* Contains copyright symbols, my name and year when the page was created
+* Contains copyright symbol, my name and year when the page was created
 
 ![Footer](assets/images/footer.webp)
 
@@ -173,7 +173,7 @@ It was fixed by changing section element to div element.
   * [HTML](assets/images/html-check.webp)
 
 ### CSS
-  * [CSS Validator](https://jigsaw.w3.org/css-validator/) were used to test the CSS, and shows no errors.
+* [CSS Validator](https://jigsaw.w3.org/css-validator/) were used to test the CSS, and shows no errors.
   * [CSS Check](assets/images/css.webp)
 
 ### JavaScript 
@@ -210,10 +210,10 @@ It was fixed by changing section element to div element.
 | ------------- |-------------| -----------|
 | 1. Expand the search bar  | By clicking on the magnifying glass icon, the user opens the search bar | ![Search icon](assets/images/search.webp) |
 | 2. Search locations using search bar |Type any location in the search box and the autocomplete feature will help user choose |![Search Bar](assets/images/auto.webp) |
-| 3. Choose between hotels, restaurant and attractions | Using radio buttons user can choose what to display on the map |![Radio buttons](assets/images/radio.webp) |
-| 4. Display detail infos about every searched place |By clicking on the markers on the map user can check address, telephone number or website of each place searched|![Marker info](assets/images/info.webp) |
+| 3. Choose between hotels, restaurants and attractions | Using radio buttons user can choose what to display on the map |![Radio buttons](assets/images/radio.webp) |
+| 4. Display details about every place searched|By clicking on the markers on the map user can check address, telephone number or website of each place searched|![Marker info](assets/images/info.webp) |
 | 5. Display search result in the table| All places search by the user will be displayed in the table with id tag, name and rating stars | ![Table](assets/images/table.webp) |
-| 6. Clear button | The clear button will delete all seraching results, with markers, table and search bar |![Button](assets/images/button.webp)|
+| 6. Clear button | The clear button will delete all searching results, with markers, table and search bar |![Button](assets/images/button.webp)|
 
 # Deployment
 ### The following steps were taken to deploy the website on GitHub Pages:
@@ -238,3 +238,7 @@ It was fixed by changing section element to div element.
 2. Click on Fork button in upper right hand corner
 
 # Credits
+1. Code Institute - 
+2. Gareth McGirr - my menthor, who was always very helpful
+3. Slack community - Their help was invaluable.
+4. [Stack Overflow](https://stackoverflow.com/) - 
