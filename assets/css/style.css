@@ -343,7 +343,7 @@ h1 {
 a.more-link {
     text-transform: uppercase;
     font-size: 13px;
-    background-color: #bbb;
+    background-color: #0ba5f1;
     padding: 10px 15px;
     border-radius: 0;
     color: #fff;
@@ -356,6 +356,9 @@ a.more-link {
     letter-spacing: 1px;
 }
 
+a.more-link:hover {
+    background-color: #d8e3e9;
+}
 
 @media(min-width: 280px) and (max-width: 359px) {
     .custom-shape-divider-bottom-1677668137 svg {height: 40px;}
@@ -369,6 +372,10 @@ a.more-link {
 
 @media(min-width: 360px) and (max-width: 450px) {
     .search-box.active {width: 250px;}
+}
+
+@media(min-width: 280px) and (max-width: 436px) {
+.error-container {font-size: 100px;}
 }
 
 @media(min-width: 1024px) {
