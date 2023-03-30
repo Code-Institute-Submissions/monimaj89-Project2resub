@@ -143,7 +143,11 @@ and adjusted to my needs
 
 ![Footer](assets/images/footer.webp)
 
+## 404 page
+* Animated 404 page borrowed from [codewithrandom](https://www.codewithrandom.com/2022/12/19/simple-404-page-html-code-404-page-html-codewithrandom/) and adjust to my needs
 
+![404 page](assets/images/404.webp)
+![404 page with animation](assets/images/404a.webp)
 
 # Technologies used
   * Languages
