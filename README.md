@@ -154,7 +154,8 @@ and adjusted to my needs
     * GitHub - source code is hosted and deployed using Git Pages.
     * Git - used to commit and push code during the development off the Website
     * Google Chrome Developer Tools was used for debugging and testing with Lighthouse
-    * [Google map](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch) - to download and set the map on the site
+    * [Google Maps API](https://mapsplatform.google.com/maps-products/) - to download and set the map on the site
+    * [Google Places API](https://mapsplatform.google.com/maps-products/#places-section) - connected to search bar and used to display locations on the map
     * [Google Fonts](https://fonts.google.com/) - used to import fonts for use in the site
     * [Font Awesome](https://fontawesome.com/) - used for icons
     * [Cloud Convert](https://cloudconvert.com/) - used to convert images into webp
@@ -238,7 +239,22 @@ It was fixed by changing section element to div element.
 2. Click on Fork button in upper right hand corner
 
 # Credits
-1. Code Institute - 
+* The following tutorials and articles have been used to help create my site
+  * [W3 Schools Google Maps Event](https://www.w3schools.com/graphics/google_maps_events.asp)
+  * [W3 School Event Listener](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
+  * [Add a Google Map with the marker](https://developers.google.com/maps/documentation/javascript/adding-a-google-map)
+  * [Google Maps Markers](https://developers.google.com/maps/documentation/javascript/markers)
+  * [Marker Animations](https://developers.google.com/maps/documentation/javascript/examples/marker-animations-iteration)
+  * [Info window](https://developers.google.com/maps/documentation/javascript/examples/infowindow-simple)
+  * Google Places API Autocomplete
+    * [Autocomplete feature](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete)
+    * [Search for hotels etc.](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch)
+    * [Place search box](https://developers.google.com/maps/documentation/javascript/examples/places-searchbox)
+    * [Place deatils](https://developers.google.com/maps/documentation/javascript/examples/place-details)
+  * [Tutorial: How to Build a Javascript Google Map Directions API & Places API Project](https://www.youtube.com/watch?v=BkGtNBrOhKU&ab_channel=SamCodes)
+
+I would also like to thank 
+1. Code Institute - for expanding my knowledge and well prepared courses
 2. Gareth McGirr - my menthor, who was always very helpful
 3. Slack community - Their help was invaluable.
-4. [Stack Overflow](https://stackoverflow.com/) - 
+4. [Stack Overflow](https://stackoverflow.com/) - they always had an answer to my question
