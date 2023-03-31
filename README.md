@@ -14,6 +14,41 @@ The website is fully responsive and was designed using HTML, CSS and JavaScript.
 
 # Contents
 
+* [User Experience (UX)](#user-experience-ux)
+  * [Project Goals](#project-goals)
+    * [User Goals](#user-goals)
+    * [Site Owner Goals](#site-owner-goals)
+    * [User Expectactions](#user-expectactions)
+  * [User Stories](#user-stories) 
+    * [As a first time user](#as-a-first-time-user)
+    * [As a site owner](#as-a-site-owner)
+* [Design](#design)
+  * [Colour](#colour)
+  * [Typography](#typography)
+  * [Icons and Images](#icons-and-images)
+  * [Wireframes](#wireframes)
+* [Features](#features)
+  * [Favicon](#favicon)
+  * [Search Bar](#search-bar)
+  * [Clear Button](#clear-button)
+  * [Radio Buttons](#radio-buttons)
+  * [Map](#map)
+  * [Markers](#markers-on-the-map)
+  * [Table](#table)
+  * [Footer](#footer)
+  * [404 page](#404-page)
+* [Technologies](#technologies-used)
+* [Testing](#testing)
+  * [Validator Testing](#validator-testing)
+    * [HTML](#html)
+    * [CSS](#css)
+    * [JavaScript](#javascript)
+  * [Wave Testing](#wave-testing)
+  * [Lighthouse Testing](#lighthouse-testing)
+  * [User Testing](#user-testing)
+* [Deployment](#deployment)
+* [Credits](#credits)
+
 # User Experience (UX)
 ## Project Goals
 ### User Goals:
@@ -214,7 +249,7 @@ It was fixed by changing section element to div element.
 |   Target      |   Outcome     | Image |
 | ------------- |-------------| -----------|
 | 1. Expand the search bar  | By clicking on the magnifying glass icon, the user opens the search bar | ![Search icon](assets/images/search.webp) |
-| 2. Search locations using search bar |Type any location in the search box and the autocomplete feature will help user choose |![Search Bar](assets/images/auto.webp) |
+| 2. Search locations using search bar |Type any location in the search box and choose from the autocomplete list |![Search Bar](assets/images/auto.webp) |
 | 3. Choose between hotels, restaurants and attractions | Using radio buttons user can choose what to display on the map |![Radio buttons](assets/images/radio.webp) |
 | 4. Display details about every place searched|By clicking on the markers on the map user can check address, telephone number or website of each place searched|![Marker info](assets/images/info.webp) |
 | 5. Display search result in the table| All places search by the user will be displayed in the table with id tag, name and rating stars | ![Table](assets/images/table.webp) |
