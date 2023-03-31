@@ -14,7 +14,6 @@ const searchBox = document.querySelector(".search-box");
         if(searchInput.value != ""){
           var values = searchInput.value;
           searchData.classList.remove("active");
-          searchData.innerHTML = "You just typed " + "<span style='font-weight: 500;'>" + values + "</span>";
         }else{
           searchData.textContent = "";
         }
