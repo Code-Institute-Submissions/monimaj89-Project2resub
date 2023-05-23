@@ -151,11 +151,16 @@ and adjusted to my needs
 ![Clear button](assets/images/button.webp)
 
 ## Radio buttons
-* To let users search bettwen 
+* To let users search between 
   * hotels 
   * restaurants 
   * tourist attractions
 * Styled to match the rest of the page
+
+![Radio buttons](assets/images/radio.webp) 
+* For more narrow screen, like in Samsung Fold, radio buttons are placed in a column
+
+![Column radio buttons](assets/images/fold.webp)
 
 ## Map
 * Was downloaded from [Google Maps Platform](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch) and adjusted to my needs
