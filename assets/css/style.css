@@ -165,7 +165,8 @@ body {
 
 .mybtn{
     background-color: #0ba5f1;
-    border: 1px solid;
+    color: #fff;
+    border: 1px solid #fff;
     border-radius: 1rem;
     padding: 10px;
     font-size: 18px;
@@ -376,7 +377,7 @@ a.more-link:hover {
 }
 
 @media(min-width: 1024px) {
-    .hero-image {height: 600px;}
+    .hero-image {height: 800px;}
     .custom-shape-divider-bottom-1677668137 svg {height: 120px;}
     .search-box.active {width: 550px;}
     div#map {width: 50%; float: left;}
