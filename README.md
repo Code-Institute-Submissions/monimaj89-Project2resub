@@ -279,18 +279,18 @@ It was fixed by changing section element to div element.
 
 # Credits
 * The following tutorials and articles have been used to help create my site
-  * [W3 Schools Google Maps Event](https://www.w3schools.com/graphics/google_maps_events.asp)
-  * [W3 School Event Listener](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
-  * [Add a Google Map with the marker](https://developers.google.com/maps/documentation/javascript/adding-a-google-map)
-  * [Google Maps Markers](https://developers.google.com/maps/documentation/javascript/markers)
-  * [Marker Animations](https://developers.google.com/maps/documentation/javascript/examples/marker-animations-iteration)
-  * [Info window](https://developers.google.com/maps/documentation/javascript/examples/infowindow-simple)
+  * [W3 Schools Google Maps Event](https://www.w3schools.com/graphics/google_maps_events.asp) - map’s location on the site
+  * [W3 School Event Listener](https://www.w3schools.com/js/js_htmldom_eventlistener.asp) - add event listener for hiding the paragraph
+  * [Add a Google Map with the marker](https://developers.google.com/maps/documentation/javascript/adding-a-google-map) - add Google map to the site
+  * [Google Maps Markers](https://developers.google.com/maps/documentation/javascript/markers) - add green markers to the map
+  * [Marker Animations](https://developers.google.com/maps/documentation/javascript/examples/marker-animations-iteration) - add an animation to markers
+  * [Info window](https://developers.google.com/maps/documentation/javascript/examples/infowindow-simple) - pop up window with info details
   * Google Places API Autocomplete
-    * [Autocomplete feature](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete)
-    * [Search for hotels etc.](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch)
-    * [Place search box](https://developers.google.com/maps/documentation/javascript/examples/places-searchbox)
-    * [Place deatils](https://developers.google.com/maps/documentation/javascript/examples/place-details)
-  * [Tutorial: How to Build a Javascript Google Map Directions API & Places API Project](https://www.youtube.com/watch?v=BkGtNBrOhKU&ab_channel=SamCodes)
+    * [Autocomplete feature](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete) - autocomplete list with predicted terms
+    * [Search for hotels etc.](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch) - search for hotels functions extended with restaurant and attractions
+    * [Place search box](https://developers.google.com/maps/documentation/javascript/examples/places-searchbox) - search box conncected to the map
+    * [Place deatils](https://developers.google.com/maps/documentation/javascript/examples/place-details) - info details about place in pop up window
+  * [Java Script Google Maps API Tutorial](https://www.youtube.com/watch?v=uPhWSyRqQDA&t=0s&ab_channel=SamCodes) - additional help understanding Google Maps API
 
 I would also like to thank 
 1. Code Institute - for expanding my knowledge and well prepared courses
