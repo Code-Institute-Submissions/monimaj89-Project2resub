@@ -255,19 +255,25 @@ Thorough and extensive testing has been carried out on the site. Each section of
 |   Target      |   Outcome     | Image |
 | ------------- |-------------| -----------|
 | 1. Loading the map  | Open the page and ensure the map loads, same difficulties arosa before with the API key and the Google Cloud biling account which caused the map not bing displayed | ![Google map](assets/images/map.webp) |
-| 2. Viewing and scrolling |Browse the map by grabbing and dragging it with mouse. Scroll around the map, zooming in on the streets. |![zoom](assets/images/zoom.webp) |
-| 3. Formatting the map size | By default, the map size is set to 100% on the mobile screen size. On the bigger screens media query has been set to display map to the left site of the page, making space for the result table on the right. On mobile devices table result is displayed below the map. |![Map/Table](assets/images/map:table.webp) |
+| 2. Viewing and scrolling |Browse the map by grabbing and dragging it with mouse. Scroll around the map, zooming in on the streets |![zoom](assets/images/zoom.webp) |
+| 3. Formatting the map size | By default, the map size is set to 100% on the mobile screen size. On the bigger screens media query has been set to display map to the left site of the page, making space for the result table on the right. On mobile devices table result is displayed below the map |![Map/Table](assets/images/map:table.webp) |
 | 4. Expand the search bar  | Click on the magnifying glass icon to expand the search bar | ![Search icon](assets/images/search.webp) |
 | 5. Search locations using search bar |Search box returns a pick list and predicted search terms |![Search Bar](assets/images/auto.webp) |
 | 6. Use radio buttons | Click on radio options to choose between hotels, restaurants and attractions dislpayed on the map |![Radio buttons](assets/images/radio.webp) |
 | 7. Check the info details about place |Click on the markers on the map to check address, telephone number or website of each place searched|![Marker info](assets/images/info.webp) |
 | 8. Close the information window| Click the cross in info window to close it and pass to another marker, checking if the displayed details are correct for both| ![Cross](assets/images/close.webp) |
-| 9. Change markers area | Markers appear on default map location, drag the map using mouse and click again on radio buttons to display hotels, restaurant and attractions in the different part of the city, old markers are clearednew|![NewMarker](assets/images/newmarker.webp)|
-| 10. Display search result in the table | All places search by the user are displayed in the table with id tag, name and rating stars. Scroll table to see more results. |![Table](assets/images/table.webp)|
+| 9. Change markers area | Markers appear on default map location, drag the map using mouse and click again on radio buttons to display hotels, restaurant and attractions in the different part of the city, old markers are cleared|![NewMarker](assets/images/newmarker.webp)|
+| 10. Display search result in the table | All places search by the user are displayed in the table with id tag, name and rating stars. Scroll table to see more results |![Table](assets/images/table.webp)|
 | 11. Display place on the map by choosing it from the table | Click the place name in the table to display it on the map |![Button](assets/images/arrow.webp)|
-| 12. Clear the search result | Click on the clear button to delete all searching results, with markers, table and search bar. Reload the page for default checked hotel radio option. |![Button](assets/images/button.webp)|
+| 12. Clear the search result | Click on the clear button to delete all searching results, with markers, table and search bar. Reload the page for default checked hotel radio option |![Button](assets/images/button.webp)|
 | 13. Hide the paragraph above the search bar on mobile devices | Click on search bar icon to hide the paragraph above to save some space on smaller devices |![Paragraph](assets/images/par.webp)|
 |14. Shrink the search bar | Click on the cross next to the search icon to shrink the search box |![Cross](assets/images/cross.webp)|
+
+# Bugs
+* Radio button for hotels is coded as checked, but when clicking clear button it will also get cleared. For temporary solution reload the page to restore the checked function.
+
+* Search function works only when choosing from the list, search icon works only to expand the bar, not for search results. 
+
 
 # Deployment
 ### The following steps were taken to deploy the website on GitHub Pages:
