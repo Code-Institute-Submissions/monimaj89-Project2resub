@@ -306,6 +306,7 @@ Thorough and extensive testing has been carried out on the site. Each section of
   * [Google Maps Markers](https://developers.google.com/maps/documentation/javascript/markers) - add green markers to the map
   * [Marker Animations](https://developers.google.com/maps/documentation/javascript/examples/marker-animations-iteration) - add an animation to markers
   * [Info window](https://developers.google.com/maps/documentation/javascript/examples/infowindow-simple) - pop up window with info details
+  * [Rating details](https://developers.google.com/maps/documentation/places/web-service/details#PlaceDetailsResults) - Rating star in the table
   * Google Places API Autocomplete
     * [Autocomplete feature](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete) - autocomplete list with predicted terms
     * [Search for hotels etc.](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch) - search for hotels functions extended with restaurant and attractions
