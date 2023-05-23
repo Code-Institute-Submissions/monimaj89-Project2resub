@@ -4,6 +4,8 @@ let markers = [];
 let autocomplete;
 let placeType;
 
+// Google map displayed on the site downloaded from Google documentation with minor changes inclugind my own coordinates pointing on London
+
 const MARKER_PATH =
   "https://developers.google.com/maps/documentation/javascript/images/marker_green";
   const hostnameRegexp = new RegExp("^https?://.+?/");
@@ -47,7 +49,7 @@ const MARKER_PATH =
     }
   }
 
-  // Search for hotels, restaurant and attractions in the selected city, within the viewport of the map.
+  // Hotel search function borrowed from Google maps docs, expanded by myself by additional search option for restaurants and attractions
 
   function search() {
     let placeTypeNew;
@@ -67,8 +69,10 @@ const MARKER_PATH =
         types: [placeType]
       };
     }
-  
-  
+  //  End of my code for radio buttons
+
+// Google docs
+
     places.nearbySearch(search, (results, status) => {
       if (status === google.maps.places.PlacesServiceStatus.OK && results) {
         clearResults();
@@ -107,8 +111,9 @@ function dropMarker(i) {
       markers[i].setMap(map);
     };
   }
+//  End of Google docs
 
-// Radio buttons search function
+// Radio buttons for hotels, restaurants and attracions search function
 
 function setSearchFor(placeSearchType) {
   placeType = "";
@@ -116,7 +121,7 @@ function setSearchFor(placeSearchType) {
   search();
 }
 
-//  Show search result in the table
+//  Show search result in the table borrowed from Google Maps docs, expanded by myself by rating stars
 
 function addResult(result, i) {
   const results = document.getElementById("results");
@@ -140,7 +145,7 @@ function addResult(result, i) {
 
   const name = document.createTextNode(result.name);
 
-  //  Show rating stars on the searched places
+  // Code added by me shows rating stars on the searched places in the table
 
   let ratingHtml = "";
   let ratingNew = "";
@@ -166,7 +171,9 @@ function addResult(result, i) {
   results.appendChild(tr);
 }
 
-// Get the place details showed in an info window anchored on the marker.
+//  End of rating star code
+
+// Get the place details showed in an info window anchored on the marker, code borrowed from Google Maps docs.
 
 function showInfoWindow() {
   // @ts-ignore
@@ -243,8 +250,7 @@ function clearResults() {
 window.initMap = initMap;
 
 
-// Clear all search results
-
+// Code created by me to clear all search results using clear button
 
 
 function wipeOut() {
@@ -258,7 +264,7 @@ function wipeOut() {
 }
 
 
-// Hide the paragraph above search bar on mobile devices.
+// Code created by me to hide the paragraph above search bar on mobile devices.
 
 const searchIcon = document.querySelector(".search-icon");
 const text = document.querySelector(".text");
