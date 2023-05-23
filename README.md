@@ -46,6 +46,7 @@ The website is fully responsive and was designed using HTML, CSS and JavaScript.
   * [Wave Testing](#wave-testing)
   * [Lighthouse Testing](#lighthouse-testing)
   * [User Testing](#user-testing)
+* [Bugs](#bugs)
 * [Deployment](#deployment)
 * [Credits](#credits)
 
