@@ -49,6 +49,7 @@ The website is fully responsive and was designed using HTML, CSS and JavaScript.
 * [Bugs](#bugs)
 * [Deployment](#deployment)
 * [Credits](#credits)
+* [Git commits messages](#git-commits)
 
 # User Experience (UX)
 ## Project Goals
@@ -319,3 +320,28 @@ I would also like to thank
 2. Gareth McGirr - my menthor, who was always very helpful
 3. Slack community - Their help was invaluable.
 4. [Stack Overflow](https://stackoverflow.com/) - they always had an answer to my question
+
+
+# Git commits
+After receiving the results of my project, I got some warnings about git commit messages, I know that at this stage I have no option to change them but I would like to document how these messages could look better
+|   Old commit message      |   New message     |
+| ------------- |-------------|
+| 1. Add live site  | Create a link for a live site | 
+| 2. Add radio buttons  | Add radio buttons connected to the map | 
+| 3. Add markers and table results  | Add google map markers and table results | 
+| 4. Add star rating to the table  | Create a star rating displayed in the table | 
+| 5. Add info window content | Add an info window showing place detail on the map  | 
+| 6. Add clear button  | Add button with clear search result function | 
+| 7. Hide paragraph text on smaller devices  | Create a function to hide a paragraph on mobiles | 
+| 8. Add design and features to readme  | Create a design and features section in README | 
+| 9. Small amendments to code  | Refactor the code in index.html file | 
+| 10. Small amendments to code  | Refactor the code in map.js file | 
+| 11. Edit JS testing part  | Edit JS testing section in README | 
+| 12. Adjust mockup image  | Adjust mockup image in README | 
+| 13. Style a 404 page  | Add a color and hover effect of 404 page | 
+| 14. Style a 404 page  | Style a whole 404 page in css file | 
+| 15. Adjust 2404 page  | Adjust a style for 404 page in css file | 
+| 16. Adjust 404 page and add media query  | Add a media query and change color to 404 page | 
+| 17. Add content to readme | Create a content list in README | 
+| 18. Fixed typos | Fix typos in README and index.html files | 
+ 
