@@ -256,7 +256,7 @@ It was fixed by changing section element to div element.
 Thorough and extensive testing has been carried out on the site. Each section of the site has been thoroughly checked to ensure its trouble-free operation and to correct any errors. The site was built with a mobile first approach and the page layout adjusted to fit larger screens without unnecessary scrolling. The page layout test was carried out on all screen sizes from mobile devices through tablets and laptops to desktops. Additionaly the page layout has been adapted to a narrow screen, such as Samsung Fold, by shrinking the search bar to minimum and placing radio buttons in the column.
 |   Target      |   Outcome     | Image |
 | ------------- |-------------| -----------|
-| 1. Loading the map  | Open the page and ensure the map loads, same difficulties arosa before with the API key and the Google Cloud biling account which caused the map not bing displayed | ![Google map](assets/images/map.webp) |
+| 1. Loading the map  | Open the page and ensure the map loads, some difficulties arose before with the API key and the Google Cloud biling account which caused the map not being displayed | ![Google map](assets/images/map.webp) |
 | 2. Viewing and scrolling |Browse the map by grabbing and dragging it with mouse. Scroll around the map, zooming in on the streets |![zoom](assets/images/zoom.webp) |
 | 3. Formatting the map size | By default, the map size is set to 100% on the mobile screen size. On the bigger screens media query has been set to display map to the left site of the page, making space for the result table on the right. On mobile devices table result is displayed below the map |![Map/Table](assets/images/map:table.webp) |
 | 4. Expand the search bar  | Click on the magnifying glass icon to expand the search bar | ![Search icon](assets/images/search.webp) |
@@ -272,6 +272,8 @@ Thorough and extensive testing has been carried out on the site. Each section of
 |14. Shrink the search bar | Click on the cross next to the search icon to shrink the search box |![Cross](assets/images/cross.webp)|
 
 # Bugs
+* The previous submission of my project had problems with displaying the map, the problems were related to my billing account on the Google Cloud platform. The map worked on the day I submitted my project and also a month later with a routine site check. After receiving the results of my project, the map actually did not load and an error regarding billing account occurred in the console, after clicking on the link provided in error, I was redirected to my account on Google Cloud platform where, clicking on the name of my project, I got information that everything is working fine. The map started working immediately and now, on the day I submit my project again, the map also works.
+
 * Radio button for hotels is coded as checked, but when clicking clear button it will also get cleared. For temporary solution reload the page to restore the checked function.
 
 * Search function works only when choosing from the list, search icon works only to expand the bar, not for search results. 
